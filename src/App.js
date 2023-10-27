@@ -1,8 +1,6 @@
 import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
-// import ListPage from './pages/ListPage/index'
-// import ViewPage from './pages/ViewPage/index'
 
 const ListPage = React.lazy(() => import('./pages/ListPage/index'));
 const ViewPage = React.lazy(() => import('./pages/ViewPage/index'));

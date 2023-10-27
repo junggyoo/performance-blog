@@ -1,15 +1,12 @@
 import React from 'react';
 
+import { getParametersForUnsplash } from '../../utils';
+
 import './index.css';
 
 function zeroPad(value, len) {
   const str = '0000000000' + value.toString();
   return str.substring(str.length - len);
-}
-
-/* 파라미터 참고: https://unsplash.com/documentation#supported-parameters */
-function getParametersForUnsplash({ width, height, quality, format }) {
-  return `?w=${width}&h=${height}&q=${quality}&fm=${format}&fit=crop`;
 }
 
 /*
